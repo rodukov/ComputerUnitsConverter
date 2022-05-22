@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="main-div">
       <h1 className='default'>Computer Units Converter</h1>
-      <h4 className='default'>The most user-friendly open source unit converter. Written in react.js</h4>
+      <h4 className='default default2'>The most user-friendly open source unit converter. Written in react.js</h4>
       <div className='input-container'>
         <input value={input1} onInput={e => setInput1(e.target.value)} onChange={change_input} placeholder="0" className="input"/>
         <input value={input2} onInput={e => setInput2(e.target.value)} onChange={change_input} placeholder="0" className="input"/>

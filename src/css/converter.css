@@ -96,3 +96,17 @@
     opacity: 1;
     transform: translateY(7px);
 } */
+
+@media screen and (max-width: 1080px){
+    .main-div {
+        margin: 0; padding: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 428px){
+    .dropdown-items { width: 174px; }
+    .default { font-size: 19px; }
+    .default2 { font-size: 15px; }
+}
