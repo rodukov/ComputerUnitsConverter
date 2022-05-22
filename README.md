@@ -1,6 +1,6 @@
 # ComputerUnitsConverter
 Currency converter with a clear interface
-<img align="center" alt="Preview" src="docs/assets/preview.png"/>
+<img align="center" alt="Preview" src="./docs/assets/preview.png"/>
 
 ## How to use it?
 First install npm, then follow the steps
