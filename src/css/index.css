@@ -1,3 +1,3 @@
 body { margin: 0; padding: 0; }
-
-.wrapper { background: red; }
+@font-face { font-family: "default"; src: url("../fonts/SFUIDisplay-Regular.ttf"); }
+@font-face { font-family: "bold"; src: url("../fonts/SFUIDisplay-Bold.ttf"); }

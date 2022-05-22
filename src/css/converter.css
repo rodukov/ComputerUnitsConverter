@@ -1,0 +1,97 @@
+
+.main-div {
+    /* Aligment */
+    width: 50%; padding: 1%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 50px; margin-bottom: 50px;
+    /* Customize */
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 11.514px;
+    box-shadow: 0px 3px 10px rgb(211, 211, 211);
+
+}
+.default { margin: 0; font-family: 'default'; color: rgb(44, 44, 44); text-align: center; }
+.input {
+    /* Aligment */
+    margin: 20px;  padding: 10px;
+    /* Customize */
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 6.8571px;
+    text-align: center;
+    transition: 0.2s;
+    /* Remove Default Styles */
+    -moz-appearance:textfield;
+    outline: none;
+}
+.input:focus {
+    border-radius: 13.9518px;
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0px 10px 7px rgb(211, 211, 211);
+}
+.button {
+    margin: 20px 68px 20px 68px; 
+    padding: 5px;
+    border: none;
+    background-color: white;
+    background-image: url('../assets/exchange.svg');
+    background-clip: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 45px;
+    transition: 0.4s;
+}
+.button:active {
+    transform: rotate(180deg);
+}
+.input-container { 
+    display: grid;
+    grid-template-columns: 50% 50%; 
+}
+.DropDown { 
+    /* Aligment */
+    margin: 0px 20px 0px 20px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(231, 231, 231);
+    border: 1px solid rgb(230, 230, 230);
+}
+.dropdown-items { 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    font-family: 'bold';  
+}
+.selectDropDown {
+    color: rgb(29, 29, 29);
+    text-align: center;
+    margin: 0;
+    font-family: 'bold';
+}
+.dropdown-items {
+    border: 1px solid rgb(214, 214, 214);
+    background: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: 20px;
+    width: 423px;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(231, 231, 231);
+    transition: 0.3s;
+    opacity: 0;
+}
+.unit_name { 
+    text-align: center;
+    font-family: 'Bold';
+    letter-spacing: 2px;
+    color: rgb(29, 29, 29);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 19px;
+    transition: 0.1s;
+}
+.DropDown:hover > .dropdown-items {
+    opacity: 1;
+    transform: translateY(7px);
+}
