@@ -110,3 +110,8 @@
     .default { font-size: 19px; }
     .default2 { font-size: 15px; }
 }
+.basic {
+    display: flex;
+    justify-content: center;
+}
+.arrow { width: 24px; transition: 0.5s; margin-left: 5px; }
