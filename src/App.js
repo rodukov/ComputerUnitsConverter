@@ -17,6 +17,7 @@ function App() {
   console.log(active_1, active_2)
 
   const database = {
+    "bit": 1,
     "byte": 8,
     "kilobyte": 8192,
     "megabyte": 8388608,
@@ -30,8 +31,8 @@ function App() {
   }
 
   const change_input = (event) => { setInput2(parseFloat(event.target.value)*database[selected_1]/database[selected_2]) }
-  const get_selected_1 = (e) => { setSelected_1(e.target.innerText); switch1() }
-  const get_selected_2 = (e) => { setSelected_2(e.target.innerText); switch2() }
+  const get_selected_1 = (e) => { setSelected_1(e.target.innerText); switch1(); setInput1('0'); setInput2('0') }
+  const get_selected_2 = (e) => { setSelected_2(e.target.innerText); switch2(); setInput1('0'); setInput2('0') }
 
   document.title = "Computer Units Converter"
   function switch1() {
@@ -70,6 +71,7 @@ function App() {
         <div className="DropDown">
           <div className='basic' onClick={switch1}><p className="selectDropDown">{ selected_1 }</p> <img src={arrow} alt="arrow" className='arrow arrow1'></img></div>
           <div className='dropdown-items'>
+            <p className='unit_name' onClick={get_selected_1}>bit</p>
             <p className='unit_name' onClick={get_selected_1}>byte</p>
             <p className='unit_name' onClick={get_selected_1}>kilobyte</p>
             <p className='unit_name' onClick={get_selected_1}>megabyte</p>
@@ -84,6 +86,7 @@ function App() {
         <div className="DropDown">
         <div className='basic' onClick={switch2}><p className="selectDropDown">{ selected_2 }</p> <img src={arrow} alt="arrow" className='arrow arrow2'></img></div>
           <div className='dropdown-items'>
+            <p className='unit_name' onClick={get_selected_2}>bit</p>
             <p className='unit_name' onClick={get_selected_2}>byte</p>
             <p className='unit_name' onClick={get_selected_2}>kilobyte</p>
             <p className='unit_name' onClick={get_selected_2}>megabyte</p>
