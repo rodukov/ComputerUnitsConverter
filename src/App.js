@@ -4,6 +4,7 @@ import React from 'react';
 import arrow from '../src/assets/arrow-96.png'
 
 function App() {
+
   // const timer = ms => new Promise(res => setTimeout(res, ms))
 
   var [input1, setInput1] = useState('0');
@@ -32,6 +33,7 @@ function App() {
   const get_selected_1 = (e) => { setSelected_1(e.target.innerText); switch1() }
   const get_selected_2 = (e) => { setSelected_2(e.target.innerText); switch2() }
 
+  document.title = "Computer Units Converter"
   function switch1() {
     active_1 = !active_1;
     if(active_1) {
